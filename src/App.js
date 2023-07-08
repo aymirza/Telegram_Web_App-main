@@ -41,10 +41,10 @@ function App() {
   };
 
   const onCheckout = ( ) => {
-    const totalPrice = cartItems.reduce((a, c) => a + c.price * c.quantity, 0);
-    tele.sendData(JSON.stringify(totalPrice));
+
     tele.MainButton.text = "Pay +++++++:)";
     tele.MainButton.show();
+
     tele.close();
   };
 
